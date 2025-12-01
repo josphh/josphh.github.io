@@ -1,18 +1,140 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-GB">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Joseph Nuttall</title>
-        <link rel="stylesheet" href="&#x2f;style.css">
-        
-    </head>
-    <body class="vertical padded centered-items centered-content">
-        <div class="vertical padded spaced-large centered-items scroll">
-    <h1>Joseph Nuttall</h1>
-    <ul class="horizontal spaced-small wrap">
-        <li><a href="https://www.linkedin.com/in/josephmnuttall/">LinkedIn</a></li>
-    </ul>
-</div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Card</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* Card Container */
+        .card {
+            background-color: #ffffff;
+            width: 90%; /* Responsive width */
+            max-width: 350px;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Profile Image */
+        .profile-img img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            background-color: #ddd; /* Gray placeholder if image fails */
+        }
+
+        /* Text Styling */
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #1a1a1a;
+        }
+
+        .job-title {
+            color: #007AFF;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Button Links */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: block; /* Ensures links behave like buttons */
+            text-decoration: none;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: 500;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .btn.secondary {
+            background-color: transparent;
+            color: #1a1a1a;
+            border: 2px solid #e0e0e0;
+        }
+
+        .btn:hover {
+            background-color: #333;
+            transform: scale(1.02);
+        }
+
+        .btn.secondary:hover {
+            background-color: #f9f9f9;
+            border-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="profile-img">
+            <img src="./profile.jpg" alt="Profile">
+        </div>
+
+        <div class="content">
+            <h1>Joseph M. Gill</h1>
+            <p class="job-title">Studying BA Philosophy, Politics, and Economics at the University of York</p>
+            <p class="bio">
+                Interested generally in Politics and Economics
+            </p>
+        </div>
+
+        <div class="links">
+            <a href="mailto:contact@josephgill.uk" class="btn">Email Me</a>
+            <a href="https://www.linkedin.com/in/joseph-m-gill/" class="btn">LinkedIn</a>
+            <a href="#" class="btn secondary">Visit Website</a>
+        </div>
+    </div>
+
+</body>
 </html>
